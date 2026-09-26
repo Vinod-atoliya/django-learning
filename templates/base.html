@@ -1,20 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>{% block title %}My Website{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
 
     <nav>
+        <img src="{% static 'images/logo.png' %}" alt="Website Logo" class="logo">
         <a href="/">Home</a>
         <a href="/about/">About</a>
     </nav>
 
-    <hr>
-
     {% block content %}
     {% endblock %}
-
+<script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

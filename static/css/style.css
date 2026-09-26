@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(35, 195, 59);
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.content {
+    padding: 30px;
+}
+.logo {
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 20px;
+}

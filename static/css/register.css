@@ -1,0 +1,230 @@
+/* ==============================
+   REGISTER PAGE
+============================== */
+
+
+/* Page background */
+
+.register-page {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+}
+
+
+/* ==============================
+   REGISTER CONTAINER
+============================== */
+
+.register-container {
+    width: 100%;
+
+    max-width: 450px;
+}
+
+
+/* ==============================
+   REGISTER CARD
+============================== */
+
+.register-card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+.register-card h1 {
+    text-align: center;
+
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==============================
+   SUBTITLE
+============================== */
+
+.subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   FORM GROUP
+============================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+
+/* Input fields */
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Input focus */
+
+.form-group input:focus {
+    border-color: #667eea;
+
+    box-shadow:
+        0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+
+/* ==============================
+   HELP TEXT
+============================== */
+
+.help-text {
+    margin-top: 6px;
+
+    color: #888;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   ERRORS
+============================== */
+
+.error {
+    color: #dc3545;
+
+    font-size: 13px;
+
+    margin-top: 6px;
+}
+
+
+.non-field-errors {
+    color: #dc3545;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+
+/* ==============================
+   REGISTER BUTTON
+============================== */
+
+.register-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #667eea;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.register-btn:hover {
+    background: #5568d9;
+}
+
+
+/* ==============================
+   LOGIN SECTION
+============================== */
+
+.login-section {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.login-section a {
+    color: #667eea;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.login-section a:hover {
+    text-decoration: underline;
+}

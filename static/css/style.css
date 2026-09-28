@@ -1,34 +1,75 @@
-body {
+/* ==============================
+   GLOBAL
+============================== */
+
+* {
     margin: 0;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav {
-    background-color: rgb(35, 195, 59);
-    padding: 15px;
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #de0000;
 }
 
-nav a {
+
+
+/* Logo */
+
+.navbar .logo {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+
+    margin-right: 30px;
+}
+
+
+/* Navigation links container */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* Links */
+
+.nav-links a {
     color: white;
+
     text-decoration: none;
-    margin-right: 20px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+
+/* Link hover */
+
+.nav-links a:hover {
+    color: #667eea;
 }
 
-h1 {
-    color: darkblue;
-}
 
-.content {
-    padding: 30px;
-}
-.logo {
-    width: 60px;
-    height: auto;
-    vertical-align: middle;
-    margin-right: 20px;
+/* Logged-in username */
+
+.nav-links span {
+    color: white;
+
+    margin-left: 10px;
 }

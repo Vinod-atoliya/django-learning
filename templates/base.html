@@ -1,48 +1,74 @@
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{% block title %}My Website{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        {% block title %}
+        My Website
+        {% endblock %}
+    </title>
+
+
+    <!-- Common CSS -->
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+
+    <!-- Page-specific CSS -->
+
+    {% block extra_css %}
+    {% endblock %}
+
 </head>
+
 
 <body>
 
-    <nav>
-        <img src="{% static 'images/logo.png' %}" alt="Website Logo" class="logo">
-    <a href="/">Home</a>
 
-    <a href="{% url 'about' %}">
-        About
-    </a>
+    <nav class="navbar">
 
-    <a href="{% url 'student_list' %}">
-        Students
-    </a>
+    <img src="{% static 'images/logo.png' %}"
+         alt="Website Logo"
+         class="logo">
 
-    {% if user.is_authenticated %}
+    <div class="nav-links">
 
-        <span>
-            Hello {{ user.username }}
-        </span>
+        <a href="/">Home</a>
 
-        <a href="{% url 'logout' %}">
-            Logout
-        </a>
+        <a href="{% url 'about' %}">About</a>
 
-    {% else %}
+        <a href="{% url 'student_list' %}">Students</a>
 
-        <a href="{% url 'login' %}">
-            Login
-        </a>
+        {% if user.is_authenticated %}
 
-    {% endif %}
+            <span>Hello {{ user.username }}</span>
 
-</nav>
+            <a href="{% url 'logout' %}">Logout</a>
+
+        {% else %}
+
+            <a href="{% url 'login' %}">Login</a>
+
+            <a href="{% url 'register' %}">Register</a>
+
+        {% endif %}
+
+    </div>
+
+    </nav>
+
 
     {% block content %}
     {% endblock %}
-<script src="{% static 'js/script.js' %}"></script>
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+
 </body>
+
 </html>
